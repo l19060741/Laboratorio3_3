@@ -17,8 +17,14 @@ int main(int argc, char** argv) {
 	cout<<"CONFIGURACION DEL ADC"<<endl;
 	
 	int numeroCanales;
+	val2:
 	cout<<"Introduzca el numero de canales (Opciones: 1-32)"<<endl;
     cin>>numeroCanales;
+    if(numeroCanales>32||numeroCanales<1)
+	{
+        cout<<"Error. Ingresa un numero de canales valido"<<std::endl;
+      	goto val2;
+    }
     
     cout<<"Se activaron "<<numeroCanales<<" canales"<<endl;	
 	ADC *adc1 = new ADC[numeroCanales];

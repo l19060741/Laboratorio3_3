@@ -40,8 +40,15 @@ int ADC::getFs(){
 void ADC::Captura(){
 	
 	cout<<endl<<"** Introduce Datos **"<<endl;
+	val1:
 	cout<<"Dame la resolucion (Opciones: 8, 10, 12): ";
 	cin>> _resolution;
+	if(_resolution!=8&&_resolution!=10&&_resolution!=12)
+	{
+		cout<<"Error. Ingresa una resolucion valida."<<endl;
+		goto val1;
+	}
+	
 	cout<<"Dame la frecuencia de muestreo: ";
 	cin>> _Fs;
 	cout<<"Dame la lectura en volts: ";
