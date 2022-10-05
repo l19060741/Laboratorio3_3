@@ -1,3 +1,15 @@
+/*********************************************************************************
+//LAB 3.3. PARADIGMA ORIENTADO A OBJETOS.
+//Anahí González Holguín 19060741
+
+// FileName:        main.cpp
+// Program version: Dev-C++ 5.11
+// Company:         TECNM - ITCH
+// Description:     LAB3.3_ARQ_PROG_HW.
+// Authors:         ANAHI GONZALEZ HOLGUIN
+// Updated:         04/10/2022
+*/
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -5,13 +17,11 @@
 #include "adc_h.hpp"
 
 using namespace std;
-/************************************************
-*                 MAIN
-************************************************/
+
 int main(int argc, char** argv) {
 	int i;
 	
-	cout<<"ARQUITECTURA DE PROGRAMACIÓN PARA HARDWARE"<<endl;
+	cout<<"ARQUITECTURA DE PROGRAMACION PARA HARDWARE"<<endl;
 	cout<<"LABORATORIO 3"<<endl;
 	cout<<"ANAHI GONZALEZ HOLGUIN"<<endl;
 	cout<<"CONFIGURACION DEL ADC"<<endl;

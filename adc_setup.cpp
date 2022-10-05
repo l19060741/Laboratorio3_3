@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "adc_h.hpp"
-/************************************************
-*                  CONSTRUCTOR 
-************************************************/
+
 ADC::ADC(int num,int resolution,int Fs,float lectura, float lectura_v, int canal, int numeroCanales){
 
 	_num=num;
@@ -22,21 +20,9 @@ ADC::ADC(){
 	_resolution=0;
 	_Fs=0;
 }
-/************************************************
-*   			GETTERS
-************************************************/
-int ADC::getNumCanales(){
-	return _numeroCanales;
-}
-int ADC::getResolution(){
-	return _resolution;
-}
-int ADC::getFs(){
-	return _Fs;
-}
-/************************************************
-*   			METODOS 
-************************************************/
+
+//MÉTODOS
+
 void ADC::Captura(){
 	
 	cout<<endl<<"** Introduce Datos **"<<endl;
@@ -48,7 +34,6 @@ void ADC::Captura(){
 		cout<<"Error. Ingresa una resolucion valida."<<endl;
 		goto val1;
 	}
-	
 	cout<<"Dame la frecuencia de muestreo: ";
 	cin>> _Fs;
 	cout<<"Dame la lectura en volts: ";
